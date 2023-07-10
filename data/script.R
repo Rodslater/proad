@@ -28,4 +28,4 @@ df <- df |>
   mutate_at(c(11:15), as.numeric) |> 
   mutate_all(replace_na, 0)
 
-saveRDS(df, "tesouro.rds")
+saveRDS(df, "data/tesouro.rds")

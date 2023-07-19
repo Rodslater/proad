@@ -26,6 +26,7 @@ df <- bind_rows(df)
 
 df <- df |> 
   mutate_at(c(11:15), as.numeric) |> 
-  mutate_all(replace_na, 0)
+  mutate_all(replace_na, 0) |>
+  select(-c(credito_disponivel, credito_indisponivel))
 
 saveRDS(df, "data/tesouro.rds")

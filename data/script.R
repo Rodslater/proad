@@ -1,7 +1,6 @@
 library(dplyr)
 library(tidyr)
 library(readxl)
-library(curl)
 
 campus <- c('Campus Aracaju', 'Campus Estância', 'Campus Glória', 'Campus Itabaiana', 'Campus Lagarto', 'Campus Propriá', 'Campus São Cristóvão', 'Campus Socorro', 'Campus Tobias Barreto', 'Reitoria')
 
@@ -39,5 +38,5 @@ saveRDS(tesouro, "data/tesouro.rds")
 saveRDS(credito, "data/credito.rds")
 
 url <- "https://github.com/ifs2023/proad2/raw/main/Atualizacao.xlsx"
-destfile <- "Atualizacao.xlsx"
+destfile <- "data/Atualizacao.xlsx"
 curl::curl_download(url, destfile)

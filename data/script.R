@@ -7,7 +7,7 @@ campus <- c('Campus Aracaju', 'Campus Estância', 'Campus Glória', 'Campus Itab
 df <- list()  # Lista para armazenar os data frames
 for (i in campus) {
   file_name <- paste0(i, ".xlsx")  # Nome do arquivo com a extensão .xlsx
-  url <- URLencode(paste0("https://github.com/Rodslater/proad/raw/main/Crédito disponível - Centralização - ", file_name))  # Caminho para o arquivo
+  url <- URLencode(paste0("https://github.com/ifs2023/proad2/raw/main/Crédito disponível - Centralização - ", file_name))  # Caminho para o arquivo
   file_path <- paste0("Crédito disponível - Centralização - ", file_name)  # Caminho para o arquivo
   curl::curl_download(url, file_path)
   

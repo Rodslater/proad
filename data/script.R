@@ -36,6 +36,7 @@ credito <- df |>
 
 saveRDS(tesouro, "data/tesouro.rds")
 saveRDS(credito, "data/credito.rds")
+df_credito <- write_xlsx(credito, "data/credito.xlsx")
 
 url <- "https://github.com/ifs2023/proad2/raw/main/Atualizacao.xlsx"
 destfile <- "data/Atualizacao.xlsx"

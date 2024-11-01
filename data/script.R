@@ -1,6 +1,7 @@
 library(dplyr)
 library(tidyr)
 library(readxl)
+library(writexl)
 
 campus <- c('Campus Aracaju', 'Campus Estância', 'Campus Glória', 'Campus Itabaiana', 'Campus Lagarto', 'Campus Propriá', 'Campus São Cristóvão', 'Campus Socorro', 'Campus Tobias Barreto', 'Reitoria')
 

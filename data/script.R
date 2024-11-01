@@ -1,7 +1,6 @@
 library(dplyr)
 library(tidyr)
 library(readxl)
-library(writexl)
 
 campus <- c('Campus Aracaju', 'Campus Estância', 'Campus Glória', 'Campus Itabaiana', 'Campus Lagarto', 'Campus Propriá', 'Campus São Cristóvão', 'Campus Socorro', 'Campus Tobias Barreto', 'Reitoria')
 
@@ -37,7 +36,7 @@ credito <- df |>
 
 saveRDS(tesouro, "data/tesouro.rds")
 saveRDS(credito, "data/credito.rds")
-df_credito <- write_xlsx(credito, "data/credito.xlsx")
+write.csv(credito, "data/credito.csv", row.names = FALSE)
 
 url <- "https://github.com/ifs2023/proad2/raw/main/Atualizacao.xlsx"
 destfile <- "data/Atualizacao.xlsx"
